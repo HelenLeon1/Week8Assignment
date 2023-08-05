@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweets Bakery: Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="heading">
+        <h1>Sweets Bakery</h1>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="catering.html">Catering</a>
+            <a href="orderOnline.html">Order Online</a>
+        </div>
+
+    </section>
+
+    <h2>Order Online</h2>
+    <p id="order-caption">Please choose from our wide selection of pastries. Currently our online ordering system is limited to our most popular items.
+       For inquiries, please fill out the order form below or contact us at the number or email provided. Phone Number: 555-555-5555. Email: sweetsbakery@gmail.com</p>
+    
+    <div class="images">
+        <figure>
+            <img src="https://www.lionsbread.com/wp-content/uploads/2022/11/Dark-Chocolate-Babka-Ring-11.jpg" alt="Babka" >
+            <figcaption>Dark Chocolate Babka</figcaption>
+        </figure>
+        <figure>
+            <img src="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/recipe_legacy/4437-3-large.jpg?itok=-_DtNxO0" alt="Apple Cinnamon Scones" >
+            <figcaption>Apple Cinnamon Scones</figcaption>
+        </figure>
+        <figure>
+            <img src="https://static01.nyt.com/images/2021/04/07/dining/06croissantsrex1/merlin_184841898_ccc8fb62-ee41-44e8-9ddf-b95b198b88db-master768.jpg" alt=" Croissant" >
+            <figcaption>Plain Croissant</figcaption>
+        </figure>
+        <figure>
+            <img src="https://rusticfamilyrecipes.com/wp-content/uploads/2021/12/Rustic_Nutella-Beignets_12.jpg" alt="Beignets" >
+            <figcaption>Beignets</figcaption>
+        </figure>
+        <figure>
+            <img src="https://www.chelseasmessyapron.com/wp-content/uploads/2019/02/Bakery-Style-Chocolate-Chip-Cookies-1.jpg" alt="Cookies" >
+            <figcaption>Cookies</figcaption>
+        </figure>
+    </div>
+
+
+    <!--A form to retrieve personal information such as name, phone number, and email for the customer's order-->
+    <form class="form">
+        <div class="form-items">
+            <label for="firstname" class="input-label">First name:</label>
+            <input type="text" id="firstname" name="firstName" placeholder="Enter First Name">
+        </div> 
+        <div class="form-items"> 
+            <label for="lastname" class="input-label">Last name:</label>
+            <input type="text" id="lastname" name="lastName" placeholder="Enter Last Name">
+        </div>
+        <div class="form-items">
+            <label for="phonenumber" class="input-label">Phone Number:</label>
+            <input type="text" id="phonenumber" name="phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="form-items">
+            <label for="email" class="input-label">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email">
+        </div>
+
+       
+        <!--A table that displays the checkboxes to choose their menu item as well as a drop down menu to choose their quantity-->
+        <table class="order-table">
+            <tr>
+                <th>Pastry</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td class="label-button">
+                    <input type="radio" id="babka" value="Babka">
+                    <label for="babka">Babka</label> 
+                </td>
+                <td>$10.00</td>
+                <td>
+                    <select class="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="scones" value="Scones">
+                    <label for="scones">Apple Cinnamon Scone</label>
+                </td>
+                <td>$2.00</td>
+                <td>
+                    <select class="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="croissant" value="croissant">
+                    <label for="croissant">Croissant</label>
+                </td>
+                <td>$2.50</td>
+                <td>
+                    <select class="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="beignets" value="beignets">
+                    <label for="beignets">Beignets</label>
+                </td>
+                <td>$1.50</td>
+                <td>
+                    <select class="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="cookies" value="cookies">
+                    <label for="cookies">Chocolate Chip Cookies</label>
+                </td>
+                <td>$1.50</td>
+                <td>
+                    <select class="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select> 
+                </td>
+            </tr>
+        </table>
+
+        <p id="comments">Comments / Requests</p>
+        <textarea></textarea><br>
+
+        <input id="submit-button" type="submit" value="Submit">
+    </form>
+</body>
+</html>
